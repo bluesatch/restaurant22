@@ -1,0 +1,115 @@
+/* colors
+
+
+    top-header => #df473a 
+    mid-header (linear gradient) => #f15f52 => #df473a
+    bottom-header => #fff8ce
+    slogan => #622535
+    section2 => #f5eedc
+    section3 => #f9f5ea
+    top-footer => #66635e
+    mid-footer => #5c5954
+    bottom-footer => #413e39
+    figure-text => #ec3400
+    sec3-icons => #999e03
+
+    fonts 
+    
+    font1 => 'PT Sans', sans-serif 
+    font2 => 'Open Sans', sans-serif
+
+    clientFont1 => 'Caveat', cursive 
+    clientFont2 => 'Courier Prime', monospace 
+    clientFont3 => 'Oooh Baby', cursive
+    clientFont4 => 'Qwitcher Grypen', cursive
+*/
+
+:root {
+    --prim: #df473a;
+    --sec: #fff8ce;
+    --tert: #413e39;
+    --textColor: #622535;
+    --grad: linear-gradient(#f15f52, #df473a);
+
+    --font1: 'PT Sans', sans-serif;
+    --font2: 'Open Sans', sans-serif;
+
+}
+
+* { box-sizing: border-box;}
+
+body { 
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.top-header {
+    width: 100%;
+    background-color: var(--prim);
+}
+
+.social-link {
+    color: var(--sec);
+}
+
+.social-link:hover {
+    color: var(--tert);
+}
+
+.mid-header {
+    padding: 20px 0;
+    width: 100%;
+    background: var(--grad);
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font1);
+}
+
+.main-dropdown li {
+    text-transform: uppercase;
+}
+
+.main-nav-link {
+    color: var(--sec);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.main-nav-link:hover {
+    color: #000;
+    background-color: var(--sec);
+    border: none;
+}
+
+.bottom-header {
+    padding: 20px 0;
+    width: 100%;
+    background-color: var(--sec);
+}
+
+.slogan {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+    color: var(--textColor);
+    font-family: var(--font2);
+    font-size: calc(22px + (26 - 22) * ((100vw - 300px) / (1600 - 300)));
+    /* font-size: 22px; */
+    font-style: italic;
+    font-weight: 200;
+}
+
+@media (min-width: 992px) {
+    .slogan {
+        width: 45%;
+    }
+}
+
+.search {
+    background-color: var(--sec);
+    border-color: var(--textColor);
+}
