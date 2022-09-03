@@ -76,6 +76,7 @@ body {
 .main-nav-link {
     color: var(--sec);
     font-size: 12px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -112,4 +113,85 @@ body {
 .search {
     background-color: var(--sec);
     border-color: var(--textColor);
+}
+
+/* carousel */
+
+.carousel-section {
+    position: relative;
+    background-size: cover;
+    background-image: url(../media/foodpic7Cropped.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.75;
+}
+
+.carousel-parent {
+    position: relative;
+    box-shadow: 0px 3px 5px #333;
+}
+
+.carousel-child {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    width: 350px;
+    height: 125px;
+    background-color: var(--sec);
+    opacity: 0.75;
+    z-index: 2;
+}
+
+.promo-header {
+    font-family: var(--font1);
+    font-size: 48px;
+    text-shadow: 2px 2px 2px var(--prim);
+}
+
+.carousel-headline, .carousel-text {
+    font-family: var(--font2);
+    font-style: italic;
+}
+/* end carousel */
+
+.info-section {
+    padding: 30px 0;
+    width: 100%;
+    background-color: #f5eedc;
+}
+
+.info-figure {
+    background-color: #fff;
+    /* border: 1px solid black; */
+    box-shadow: 0px 4px 4px #ddd;
+}
+
+.figure-text-div {
+    padding-left: 20px;
+}
+
+.figure-h2 {
+    margin: 0;
+    padding: 0;
+    color: #ec3400;
+    font-family: var(--font1);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.figure-text {
+    color: var(--textColor);
+    font-family: var(--font2);
+    font-size: 14px;
 }
